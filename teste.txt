@@ -1,0 +1,103 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Principal;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome = "";
+            float nota1, nota2, media;
+            inicio:1
+            WriteLine("Digite o nome do aluno:");
+            nome = ReadLine();
+            WriteLine("Digite a primeira nota do aluno:");
+            nota1 = float.Parse(ReadLine());
+            WriteLine("Digire a segunda nota do aluno:");
+            nota2 = float.Parse(ReadLine());
+            media = (nota1 + nota2) / 2;
+            WriteLine("A media final do aluno" + nome + " é: " + media);
+
+            WriteLine("Deseja realizar outro calculo? (S/N");
+            string resposta = ReadLine();
+            if (resposta == "S" || resposta == "s")
+            { goto inicio; }
+
+            else { ReadLine(); }
+
+                
+        }
+  }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Principal;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 3;
+            if (a < 0)
+            {
+                WriteLine($"O numero {a} é positivo!");
+            }
+            else
+            {
+                WriteLine($"O numero {a} é negativo!");
+            }
+            ReadLine();
+        }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Principal;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = -2;
+            if (a < 0)
+            {
+                WriteLine($"O numero {a} é negativo!");
+            }else if (a > 0 && a <= 10)
+            {
+            
+                WriteLine($"O numero {a} esta entre 0 e 10!");
+            }
+            else
+            {
+            
+                WriteLine($"O numero {a} é maior que 10!");
+            }
+            ReadKey();
+        }
+    }
+}
+
+
